@@ -15,11 +15,13 @@ This Chrome plugin helps users easily capture and organize information from rece
 *   **Local Data Storage:**
     *   Securely stores your data within your Chrome browser.
 *   **Export Claims:**
-    *   Export claim information to assist in your insurance filing process.
+    *   Export claim information (e.g., as a summary or image collection) to assist in your insurance filing process. **This data can then be used when you interact with your specific insurance provider's portal or forms.**
 
 ## Overview
 
 Managing receipts and invoices for insurance claims can be a hassle. This plugin aims to simplify the process by allowing you to quickly digitize your paper documents, extract the important information, and keep things organized, all within your browser.
+
+**Important Note:** This tool is designed to help you prepare and organize your claim information. It does not directly integrate with or submit claims to specific insurance companies, as each provider has unique systems and requirements. The exported data from this plugin is intended to support your manual submission process.
 
 ## Installation
 
@@ -31,7 +33,7 @@ Managing receipts and invoices for insurance claims can be a hassle. This plugin
 2.  Select 'Upload New Receipt' and choose your image file.
 3.  Review the extracted information and make any necessary corrections.
 4.  Assign the receipt to a new or existing claim.
-5.  When ready, export the claim data.
+5.  When ready, export the claim data to use for your submission to your insurance provider.
 
 ---
 
