@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insurance Claim Helper</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+</head>
+<body>
+  <h1>Insurance Claim Helper</h1>
+  <p>Welcome! Upload your receipts here.</p>
+
+  <input type="file" id="receiptUpload" accept=".jpg, .jpeg, .png" multiple>
+  <button id="uploadButton">Extract Data from Selected Files</button>
+
+  <div id="ocrProgress"></div>
+  <div id="ocrResult"></div>
+
+  <hr>
+  <h2>Organize Claim</h2>
+  <div>
+    <label for="newClaimName">New Claim Name:</label>
+    <input type="text" id="newClaimName" placeholder="E.g., Dental Checkup Jan 2024">
+    <button id="createClaimButton">Create & Select Claim</button>
+  </div>
+  <br>
+  <div>
+    <label for="claimSelector">Or Select Existing Claim:</label>
+    <select id="claimSelector">
+      <option value="">-- Select a Claim --</option>
+      <!-- Claim names will be populated here by JavaScript -->
+    </select>
+    <div id="currentClaimReceipts" style="margin-top: 10px;">
+      <h4>Receipts for Selected Claim:</h4>
+      <ul id="receiptList"></ul>
+    </div>
+  </div>
+
+  <hr>
+  <h2>Export Data</h2>
+  <div>
+    <button id="exportDataButton">Export All Data as JSON</button>
+  </div>
+
+  <hr>
+  <h2>Claim Details</h2>
+  <div>
+    <label for="vendorName">Vendor Name:</label>
+    <input type="text" id="vendorName" name="vendorName"><br><br>
+
+    <label for="receiptDate">Date:</label>
+    <input type="date" id="receiptDate" name="receiptDate"><br><br>
+
+    <label for="totalAmount">Total Amount:</label>
+    <input type="number" id="totalAmount" name="totalAmount" step="0.01"><br><br>
+
+    <label for="invoiceNumber">Invoice Number (optional):</label>
+    <input type="text" id="invoiceNumber" name="invoiceNumber"><br><br>
+
+    <button id="saveDetailsButton">Save Claim Details</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
