@@ -1,0 +1,8 @@
+{
+  "name": "ai-claim-helper",
+  "version": "0.1.0",
+  "description": "Insurance Claim Helper end-to-end tests",
+  "scripts": {
+    "test": "node test/runTests.js"
+  }
+}

@@ -38,3 +38,14 @@ Managing receipts and invoices for insurance claims can be a hassle. This plugin
 ---
 
 *Note: This is a conceptual tool. The features described are planned functionalities.*
+
+## Running Tests
+
+This repository uses a small custom test runner written in Node.js. To execute the end-to-end tests:
+
+```bash
+node -v   # ensure Node.js is available
+npm test
+```
+
+All tests live in the `test/` folder and run automatically when executing `npm test`.
